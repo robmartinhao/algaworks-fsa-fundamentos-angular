@@ -1,9 +1,13 @@
-<h1>
-  Welcome to {{nome}}!!! 
-</h1>
+<div>
+  <div class="alert alert-success" role="alert">
+    Funcionário adicionado: <strong>{{nome}}</strong>
+  </div>
 
-<h2>Minha idade é {{10 + getIdade()}}</h2>
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" class="form-control" (input)="alterarNome($event)" value={{nome}}>
+  </div>
 
-<hello></hello>
+  <button type="button" class="btn btn-primary" (click)="adicionar()">Adicionar</button>
 
-<app-bem-vindo></app-bem-vindo>
+</div>
