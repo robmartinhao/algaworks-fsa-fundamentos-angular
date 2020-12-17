@@ -13,7 +13,7 @@ export class AppComponent {
   }
 
 
-  nome = "Robson Martinhão";
+  nome = "José Augusto";
   dataAniversario = new Date(1990, 3, 19);
   preco = 12855.32;
   troco = 0.57392;
